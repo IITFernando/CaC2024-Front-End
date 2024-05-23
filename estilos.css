@@ -553,12 +553,17 @@ select
 
 @media screen and (max-width:950px)
 {
+    *
+    {
+        padding: 0;
+    }
+
     body
     {
-        grid-template-rows: 400px auto 1fr;
+        grid-template-rows: 400px auto 3fr;
         font-size: 14px;
         padding: 0;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     header
@@ -589,8 +594,9 @@ select
 
     .cardTrabajo
     {
-        width: 90%;
         margin: 5px auto;
+        padding: 3px;
+        width: 90%;
     }
     .contenedorMenu
     {
@@ -598,7 +604,7 @@ select
         flex-direction: column;
         gap: 10px;
         flex-wrap: wrap;
-        height: fit-content;
+        /* height: fit-content; */
     }
 
     .contenedorMarca
@@ -629,6 +635,7 @@ select
 
     .index p
     {
+        height: 100%;
         margin: auto;
         width: 95%;
     }
