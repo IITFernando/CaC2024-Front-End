@@ -438,6 +438,11 @@ select
 
 @media screen and (max-width:1270px)
 {
+    body
+    {
+        background-color: red;
+    }
+    
     .trabajos
     {
         gap: 10px;
