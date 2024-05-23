@@ -561,6 +561,7 @@ select
 
     body
     {
+        background-color: red;
         grid-template-rows: 400px auto 3fr;
         font-size: 14px;
         padding: 0;
