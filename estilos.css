@@ -436,7 +436,8 @@ select
     }
 }
 
-@media screen and (max-width:1270px)
+/* @media screen and (max-width:1270px) */
+@media screen and (max-width:1170px)
 {
     body
     {
