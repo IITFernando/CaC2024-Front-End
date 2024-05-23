@@ -11,13 +11,8 @@ a
 {
     color: white;
     display: block;
-    outline: 2px solid #a8a7a7;
+    /* outline: 2px solid #a8a7a7; */
     text-decoration: none;
-}
-
-a:hover
-{
-    outline: 2px solid white;
 }
 
 body
@@ -25,6 +20,7 @@ body
     color: white;
     display:grid;
     grid-template-rows: 3fr 9fr 1fr;
+    grid-template-rows: 200px 9fr 1fr;
     height:99vh;
     margin: 0 auto;
     max-width: 1920px;
@@ -57,7 +53,7 @@ header
     display: grid;
     grid-template-areas: 
     "menu marca";
-    grid-template-columns: 1000px 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     height:100%;
     margin: auto;
@@ -75,7 +71,6 @@ nav
     display: flex;
     margin-bottom: 10px;
     margin-left: 15px;
-    width: 70%;
     width: 100%;
 }
 
@@ -125,6 +120,7 @@ select
     border-radius: 10px;
     display: flex;
     height: 170px;
+    height: fit-content;
     justify-content: space-around;
     margin: 10px auto;
     outline: 2px solid #2bdda6;
@@ -144,6 +140,7 @@ select
 {
     font-family: "Font Awesome 5 Free";
     color: #393535;
+    color: red;
     cursor: pointer;
     font-weight: 900;
     font-size: 25px;
@@ -151,7 +148,7 @@ select
     font-style: italic;
     content: "\f2b6";
     position: absolute;
-    top: 1px;
+    top: 4px;
     left: 0;
     visibility: hidden;
     transition: left 300ms ease;
@@ -159,7 +156,7 @@ select
   
 .contenedorBoton:hover::before
 {
-    left: 160px;
+    left: 180px;
     visibility: visible;
 }
 
@@ -187,7 +184,6 @@ select
 
 .contenedorMenu
 {
-    display: inline-block;
     grid-area: menu;
     font-family: "Josefin Sans";
     font-size: 20px;
@@ -207,6 +203,10 @@ select
     font-size: 3.13em;
     font-weight: bold;
     text-align:right;
+    text-shadow: 0px 0px 14px #2eecc7;
+    /* transition-duration: 1s;
+    transform: rotate3d(0, 1, 0, 360deg); */
+    animation: rotar3D 6s linear infinite;
 }
 
 .cuerpo2H
@@ -281,18 +281,18 @@ select
 
 .etiqueta
 {
-    text-align: right;
     display: inline-block;
     font-family: "Josefin Sans";
     font-size: 1.25em;
     width: 23%;
+    text-align: right;
 }
 
 .formulario
 {
     border-radius: 5px;
-    height: fit-content;
     grid-area: formulario;
+    height: fit-content;
     margin-left:15px;
     margin-top: auto;
     margin-bottom: auto;
@@ -300,6 +300,12 @@ select
     padding: 10px;
     width: 70%;
 
+}
+
+.icono
+{
+    margin:4px 4px;
+    width: 30px;
 }
 
 .imgLogo
@@ -323,20 +329,45 @@ select
     width: 150px;
 }
 
+.item
+{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
 .itemMenu
 {
+    background-color: red;
+    border-radius: 15px;
     display: inline-block;
-    height: 100%;
-    line-height: 28px;
-    width: 19%;
+    height: 40px;
+    outline: 3px solid #a8a7a7;
+    overflow:hidden;
+    transition: width 0.5s linear;
+    white-space: nowrap;
+    width: 39px;
+}
+
+.itemMenu:hover
+{
+    outline: 4px solid white;
+    width: 29%;
+    .icono
+    {
+        animation: girar 0.4s linear;
+    }
 }
 
 .itemMenuSeleccionado
 {
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px #2eecc7;
     display: inline-block;
-    height: 100%;
+    height: 40px;
     outline: 4px solid #2eecc7;    
-    width: 19%;
+    vertical-align:top;
+    width:210px;
 }
 
 .josefin
@@ -389,9 +420,19 @@ select
     header
     {
         grid-template-areas:
-        "marca marca"
-        "menu menu";
-        grid-template-rows: 2fr 1fr;
+        "menu marca";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .campoEntrada, .campoEntradaSelect
+    {
+        width: 97%;
+    }
+
+    .etiqueta
+    {
+        width:28%;
+        text-align: left;
     }
 }
 
@@ -410,14 +451,14 @@ select
     header
     {
         grid-template-areas:
-        "marca marca"
-        "menu menu";
-        grid-template-rows: 2fr 1fr;
+        "menu marca";
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
     }
-    
+
     .campoEntrada
     {
-        width: 98%;
+        width: 70%;
     }
     
     .campoEntradaSelect
@@ -441,7 +482,6 @@ select
     
     .formulario
     {
-        /* height: 90%; */
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -460,7 +500,7 @@ select
 {
     .cuerpo2H
     {
-        align-items: center;
+        width: 98%;
     }
     
     .cuerpo2H .index
@@ -468,19 +508,20 @@ select
         grid-template-areas:
         "logo logo"
         "parrafo parrafo";
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
     }
     
     .imgLogoGrande
     {
-        display:inline-block;
-        margin: 10px auto;
-        width: 30%;
+        margin: 10px auto 1px auto;
+        width: 350px;
     }
-    .itemMenu, .itemMenuSeleccionado
+
+    .index p
     {
-        width: 18%;
+        width: 98%;
     }
-    
 }
 
 @media screen and (max-width:985px)
@@ -496,11 +537,6 @@ select
     body
     {
         font-size: 14px;
-    }
-
-    .contenedorMenu .itemMenu, .contenedorMenu .itemMenuSeleccionado
-    {
-        width: 15%;
     }
 
     .cuerpo3v .roboto, .cuerpo3v .josefin
@@ -519,8 +555,12 @@ select
 {
     body
     {
+        grid-template-rows: 400px auto 1fr;
         font-size: 14px;
+        padding: 0;
+        overflow: scroll;
     }
+
     header
     {
         grid-template-areas:
@@ -528,6 +568,8 @@ select
         "menu";
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
+        gap: 30px;
+        height: fit-content;
     }
     
     select
@@ -535,22 +577,32 @@ select
         width: 100%;
     }
 
+    .campoEntrada
+    {
+        width: 98%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
     .cardTrabajo
     {
-        width: 130%;
-        margin-left: 10px;
+        width: 90%;
+        margin: 5px auto;
     }
     .contenedorMenu
     {
         display: flex;
         flex-direction: column;
+        gap: 10px;
         flex-wrap: wrap;
     }
-    
-    .contenedorMenu .itemMenu, .contenedorMenu .itemMenuSeleccionado
+
+    .contenedorMarca
     {
-        font-size: 1em;
-        width: 91%;
+        margin-top: 5px;
     }
 
     .cuerpo2H .contacto
@@ -569,10 +621,25 @@ select
         text-align: left;
     }
 
+    .imgLogoGrande
+    {
+        width: 350px;
+    }
+
     .index p
     {
-        height: fit-content;
-        width: 80%;
+        margin: auto;
+        width: 95%;
+    }
+
+    .itemMenu:hover
+    {
+        width: 91%;
+    }
+    
+    .itemMenuSeleccionado
+    {
+        width: 91%;
     }
 
     .mapa
@@ -582,10 +649,34 @@ select
     
     .trabajos
     {
-        gap: 10px;
-        grid-template-columns: 70%;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(9,1fr);
-        width: 100%;
+        width: 98%;
+    }
+}
+
+/* Animaciones */
+@keyframes girar
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotar3D
+{
+    from
+    {
+        transform: rotate3d(0,1,0, 0deg);
+    }
+    to
+    {
+        transform: rotate3d(0,1,0, 360deg);
     }
 }
 
