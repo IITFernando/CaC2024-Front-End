@@ -448,6 +448,11 @@ select
 
 @media screen and (max-width:1030px)
 {
+    body
+    {
+        background-color: red;
+    }
+    
     header
     {
         grid-template-areas:
@@ -498,11 +503,6 @@ select
 
 @media screen and (max-width:1025px)
 {
-    body
-    {
-        background-color: red;
-    }
-    
     .cuerpo2H
     {
         width: 98%;
