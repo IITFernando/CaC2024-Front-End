@@ -451,13 +451,16 @@ select
     }   
 }
 
-@media screen and (max-width:1030px)
+@media screen and (max-width:1080px)
 {
     body
     {
-        background-color: red;
-    }
-    
+        background-color: green;
+    }    
+}
+
+@media screen and (max-width:1030px)
+{
     header
     {
         grid-template-areas:
