@@ -1,0 +1,361 @@
+@media screen and (max-width:1423px)
+{
+    header
+    {
+        grid-template-areas:
+        "menu marca";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .campoEntrada, .campoEntradaSelect
+    {
+        width: 97%;
+    }
+
+    .etiqueta
+    {
+        width:28%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1270px)
+{
+   
+    .trabajos
+    {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }   
+}
+
+/* formato celular */
+@media screen and (min-width:985px) and (max-width:1080px)
+{
+    *
+    {
+        padding: 0;
+    }
+
+    body
+    {
+        grid-template-rows: 400px auto 3fr;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    header
+    {
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        /* gap: 30px; */
+        height: fit-content;
+    }
+    
+    select
+    {
+        width: 100%;
+    }
+
+    .campoEntrada
+    {
+        width: 98%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .cardTrabajo
+    {
+        margin: 5px auto;
+        padding: 3px;
+        width: 90%;
+    }
+    .contenedorMenu
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        /* height: fit-content; */
+    }
+
+    .contenedorMarca
+    {
+        margin-top: 5px;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: fit-content;
+        width: 100%;
+    } 
+    
+    .etiqueta
+    {
+        width: 30%;
+        text-align: left;
+    }
+
+    .imgLogoGrande
+    {
+        width: 350px;
+    }
+
+    .index p
+    {
+        height: 100%;
+        margin: auto;
+        width: 95%;
+    }
+
+    .itemMenu:hover
+    {
+        width: 91%;
+    }
+    
+    .itemMenuSeleccionado
+    {
+        width: 91%;
+    }
+
+    .mapa
+    {
+        margin-bottom: 15px;
+    }
+    
+    .trabajos
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9,1fr);
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:1030px)
+{
+    header
+    {
+        grid-template-areas:
+        "menu marca";
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+    .campoEntrada
+    {
+        width: 70%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .contenedorMarca
+    {
+        margin: auto;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }    
+    
+    .formulario
+    {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mapa
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1025px)
+{
+    .cuerpo2H
+    {
+        width: 98%;
+    }
+    
+    .cuerpo2H .index
+    {
+        grid-template-areas:
+        "logo logo"
+        "parrafo parrafo";
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .imgLogoGrande
+    {
+        margin: 10px auto 1px auto;
+        width: 350px;
+    }
+
+    .index p
+    {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:985px)
+{
+    .trabajos
+    {
+        grid-template-columns: 48% 48%;
+    }
+}
+
+@media screen and (max-width:968px)
+{
+    body
+    {
+        font-size: 14px;
+    }
+
+    .cuerpo3v .roboto, .cuerpo3v .josefin
+    {
+        width:80%;
+    }
+
+    .cuerpo3v .josefin
+    {
+        width:80%;
+    }
+
+}
+
+@media screen and (max-width:950px)
+{
+    *
+    {
+        padding: 0;
+    }
+
+    body
+    {
+        grid-template-rows: 400px auto 3fr;
+        font-size: 14px;
+        padding: 0;
+    }
+
+    header
+    {
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        /* gap: 30px; */
+        height: fit-content;
+    }
+    
+    select
+    {
+        width: 100%;
+    }
+
+    .campoEntrada
+    {
+        width: 98%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .cardTrabajo
+    {
+        margin: 5px auto;
+        padding: 3px;
+        width: 90%;
+    }
+    .contenedorMenu
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        /* height: fit-content; */
+    }
+
+    .contenedorMarca
+    {
+        margin-top: 5px;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        width: 100%;
+    } 
+    
+    .etiqueta
+    {
+        width: 30%;
+        text-align: left;
+    }
+
+    .imgLogoGrande
+    {
+        width: 350px;
+    }
+
+    .index p
+    {
+        height: 100%;
+        margin: auto;
+        width: 95%;
+    }
+
+    .itemMenu:hover
+    {
+        width: 91%;
+    }
+    
+    .itemMenuSeleccionado
+    {
+        width: 91%;
+    }
+
+    .mapa
+    {
+        margin-bottom: 15px;
+    }
+    
+    .trabajos
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(9,1fr);
+        width: 98%;
+    }
+}
