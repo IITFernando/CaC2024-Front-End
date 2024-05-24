@@ -421,6 +421,10 @@ select
 /* Media querys */
 @media only screen and (max-width:1240px)
 {
+    body
+    {
+        background-color: blue;
+    }
     .trabajos
     {
         grid-template-columns: 1fr 1fr;
