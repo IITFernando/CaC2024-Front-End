@@ -451,6 +451,7 @@ select
         grid-template-rows: 50% 50%;
         /* gap: 30px; */
         height: fit-content;
+        height: 100%;
     }
     
     select
