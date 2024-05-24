@@ -430,6 +430,7 @@ select
     }
     header, main, footer
     {
+        background-color: blueviolet;
         margin: 0;
         width: 96%;
     }
