@@ -359,3 +359,155 @@
         width: 98%;
     }
 }
+
+@media only screen and (max-width:1240px)
+{
+    body
+    {
+        /* background-color: blue; */
+    }
+    .trabajos
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width:1080px)
+{
+    body
+    {
+        /* background-color: black; */
+        grid-template-rows: 400px auto 3fr;
+        font-size: 14px;
+        padding: 0;
+    }
+    header, main, footer
+    {
+        margin: 0;
+        width: 96%;
+    }
+
+    header
+    {
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+        /* gap: 30px; */
+        height: fit-content;
+        height: 100%;
+    }
+    
+    select
+    {
+        width: 100%;
+    }
+
+    .campoEntrada
+    {
+        width: 98%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .cardTrabajo
+    {
+        margin: 5px auto 10px;
+        padding: 3px;
+        width: 85%;
+    }
+    .contenedorMenu
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        /* height: fit-content; */
+    }
+
+    .contenedorMarca
+    {
+        margin-top: 5px;
+    }
+
+    .cuerpo2H
+    {
+        width: 100%;
+    }
+
+    .cuerpo2H .index
+    {
+        grid-template-areas:
+        "logo logo"
+        "parrafo parrafo";
+        grid-template-rows: 1fr 1fr;
+        height: fit-content;
+        width: 100%;
+    }
+
+    .cuerpo2H .contacto
+    {
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        width: 100%;
+    } 
+    
+    .cuerpo3v
+    {
+        margin: 0;
+        width:97%;
+    }
+
+    .etiqueta
+    {
+        width: 30%;
+        text-align: left;
+    }
+
+    .formulario
+    {
+        margin: auto;
+    }
+
+    .imgLogoGrande
+    {
+        width: 100%;
+    }
+    .index p
+    {
+        height: fit-content;
+        margin: auto;
+        width: 95%;
+    }
+
+    .itemMenu:hover
+    {
+        width: 91%;
+    }
+    
+    .itemMenuSeleccionado
+    {
+        width: 91%;
+    }
+
+    .mapa
+    {
+        margin-bottom: 15px;
+    }
+    
+    .trabajos
+    {
+        grid-template-columns: 1fr;
+        margin: 0;
+        width: 96%;
+    }
+}
