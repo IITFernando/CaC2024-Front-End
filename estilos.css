@@ -432,6 +432,7 @@ select
 {
     body
     {
+        background-color: black;
         grid-template-rows: 400px auto 3fr;
         font-size: 14px;
         padding: 0;
@@ -448,7 +449,7 @@ select
         "marca"
         "menu";
         grid-template-columns: 1fr;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 40% 60%;
         /* gap: 30px; */
         height: fit-content;
         height: 100%;
