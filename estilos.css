@@ -445,13 +445,21 @@ select
         /* gap: 30px; */
         height: fit-content;
         height: 100%;
-    }
+    }   
     
     select
     {
         width: 100%;
     }
 
+    .contenedorMenu
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        /* height: fit-content; */
+    }
 }
 /* Animaciones */
 @keyframes girar
