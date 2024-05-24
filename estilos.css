@@ -419,11 +419,11 @@ select
 }
 
 /* Media querys */
-@media screen and (max-width:900px)
+@media screen and (max-width:1080px)
 {
     header
     {
-        background-color: red;
+        background-color: green;
     }
 }
 /* Animaciones */
