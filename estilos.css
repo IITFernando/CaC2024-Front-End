@@ -17,12 +17,13 @@ a
 
 body
 {
+    justify-content: center;
     color: white;
     display:grid;
+    grid-template-columns: 100%;
     grid-template-rows: 3fr 9fr 1fr;
     grid-template-rows: 200px 9fr 1fr;
     height:99vh;
-    margin: 0 auto;
     max-width: 1920px;
     row-gap: 2px;
     width: 100vw;
@@ -31,7 +32,7 @@ body
 footer
 {
     align-items: center;
-    background-color: #393535;
+    /* background-color: #393535; */
     border-radius: 4px;
     box-shadow: 5px 5px 10px #2eecc7;
     display: flex;
@@ -42,7 +43,7 @@ footer
     height:100%;
     justify-content: center;
     margin: auto;
-    width: 98%;
+    width: 96%;
 }
 
 header
@@ -76,6 +77,7 @@ nav
 
 main, footer
 {
+    background-color: #393535;
     width: 96%;
 }
 
@@ -215,14 +217,14 @@ select
 .cuerpo2H
 {
     align-items: center;
-    background-color: #393535;
+    /* background-color: #393535; */
     border-radius: 5px;
     box-shadow: 5px 5px 10px #2eecc7;
     display: flex;
     height:100%;
     justify-content:space-between;
     margin: auto;
-    width: 96%;
+    /* width: 96%; */
 }
 
 .cuerpo2H .contacto
@@ -241,6 +243,7 @@ select
     grid-template-areas:
     "parrafo logo";
     grid-template-columns: 66% 33%;
+    width: 100%;
 }
 
 .cuerpo2H p
@@ -256,7 +259,6 @@ select
 .cuerpo3v
 {
     align-items: center;
-    background-color: #393535;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #2eecc7;
     display: flex;
@@ -406,7 +408,6 @@ select
 .trabajos
 {
     align-items: center;
-    background-color: #393535;
     border-radius: 5px;
     box-shadow: 5px 5px 10px #2eecc7;
     display: grid;
@@ -419,20 +420,54 @@ select
 }
 
 /* Media querys */
+@media screen and (min-width:1081px) and (max-width:1240px)
+{
+    header, main, footer
+    {
+        height:fit-content;
+        margin: auto;
+        width: 97%;
+    }
+    
+    header
+    {
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+        height: fit-content;
+    }   
+    
+    .itemMenu:hover
+    {
+        width: 19%;
+    }
+
+    .cuerpo3v
+    {
+        height: fit-content;
+        width:97%;
+    }
+
+    .trabajos
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media screen and (max-width:1080px)
 {
     body
     {
-        /* background-color: black; */
         grid-template-rows: 400px auto 3fr;
         font-size: 14px;
-        padding: 0;
     }
     header, main, footer
     {
-        background-color: blueviolet;
-        margin: 0;
-        width: 96%;
+        height:fit-content;
+        margin: auto;
+        width: 97%;
     }
 
     header
@@ -442,14 +477,29 @@ select
         "menu";
         grid-template-columns: 1fr;
         grid-template-rows: 40% 60%;
-        /* gap: 30px; */
         height: fit-content;
-        height: 100%;
     }   
     
     select
     {
         width: 100%;
+    }
+
+    .campoEntrada
+    {
+        width: 99%;
+    }
+    
+    .campoEntradaSelect
+    {
+        width:99%
+    }
+
+    .cardTrabajo
+    {
+        margin: 5px auto 10px;
+        padding: 3px;
+        width: 85%;
     }
 
     .contenedorMenu
@@ -458,7 +508,83 @@ select
         flex-direction: column;
         gap: 10px;
         flex-wrap: wrap;
-        /* height: fit-content; */
+    }
+
+    .contenedorMarca
+    {
+        margin-top: 5px;
+    }
+    
+    .cuerpo2H
+    {
+        height: fit-content;
+        width: 97%;
+    }
+    
+    .cuerpo2H .index
+    {
+        grid-template-areas:
+        "logo logo"
+        "parrafo parrafo";
+        grid-template-rows: auto auto;
+        height: fit-content;
+        /* width: 100%; */
+    }
+    
+    .cuerpo2H .contacto
+    {
+        justify-items: center;
+        grid-template-areas:
+        "formulario"
+        "mapa";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        width: 100%;
+    } 
+    
+    .cuerpo3v
+    {
+        height: fit-content;
+        width:97%;
+    }
+
+    .etiqueta
+    {
+        width: 30%;
+        text-align: left;
+    }
+
+    .formulario
+    {
+        margin: auto;
+    }
+
+    .itemMenu:hover
+    {
+        width: 92%;
+    }
+    
+    .itemMenuSeleccionado
+    {
+        width: 92%;
+    }
+    .imgLogoGrande
+    {
+        margin:10px auto;
+        width: 90%;
+    }
+
+    .mapa
+    {
+        margin-bottom: 15px;
+        width: 85%;
+    }
+    
+    .trabajos
+    {
+        grid-template-columns: 1fr;
+        width: 97%;
     }
 }
 /* Animaciones */
