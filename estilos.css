@@ -421,10 +421,36 @@ select
 /* Media querys */
 @media screen and (max-width:1080px)
 {
+    body
+    {
+        /* background-color: black; */
+        grid-template-rows: 400px auto 3fr;
+        font-size: 14px;
+        padding: 0;
+    }
+    header, main, footer
+    {
+        margin: 0;
+        width: 96%;
+    }
+
     header
     {
-        background-color: green;
+        grid-template-areas:
+        "marca"
+        "menu";
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 60%;
+        /* gap: 30px; */
+        height: fit-content;
+        height: 100%;
     }
+    
+    select
+    {
+        width: 100%;
+    }
+
 }
 /* Animaciones */
 @keyframes girar
