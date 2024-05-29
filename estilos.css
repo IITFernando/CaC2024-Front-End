@@ -555,12 +555,12 @@ select
 
     .itemMenu:hover
     {
-        width: 92%;
+        width: 82%;
     }
     
     .itemMenuSeleccionado
     {
-        width: 92%;
+        width: 82%;
     }
     .imgLogoGrande
     {
