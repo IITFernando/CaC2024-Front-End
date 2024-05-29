@@ -464,7 +464,6 @@ select
 
     header
     {
-        background-color: red;
         grid-template-areas:
         "marca"
         "menu";
@@ -491,9 +490,8 @@ select
     .cardTrabajo
     {
         margin: 5px auto;
-        background-color: #2bdda6;
         padding: 3px;
-        width: 77%;
+        width: 350px;
     }
 
     .contenedorMenu
@@ -521,7 +519,7 @@ select
         grid-template-areas:
         "logo logo"
         "parrafo parrafo";
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 550px;
         height: fit-content;
     }
     
@@ -554,14 +552,19 @@ select
         margin: auto;
     }
 
+    .index p
+    {
+        width: 92%;
+    }
+
     .itemMenu:hover
     {
-        width: 82%;
+        width: 250px;
     }
     
     .itemMenuSeleccionado
     {
-        width: 82%;
+        width: 250px;
     }
     .imgLogoGrande
     {
