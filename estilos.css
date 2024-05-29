@@ -464,6 +464,7 @@ select
 
     header
     {
+        background-color: red;
         grid-template-areas:
         "marca"
         "menu";
