@@ -560,8 +560,15 @@ select
         margin: auto;
     }
 
+    .imgLogoGrande
+    {
+        margin:10px auto;
+        width: 90%;
+    }
+
     .index p
     {
+        height:fit-content;
         width: 92%;
     }
 
@@ -573,11 +580,6 @@ select
     .itemMenuSeleccionado
     {
         width: 250px;
-    }
-    .imgLogoGrande
-    {
-        margin:10px auto;
-        width: 90%;
     }
 
     .mapa
