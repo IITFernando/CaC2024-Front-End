@@ -525,15 +525,23 @@ select
     
     .cuerpo2H .contacto
     {
-        justify-items: center;
         grid-template-areas:
         "formulario"
         "mapa";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        justify-items: center;
         margin: auto;
         width: 100%;
     } 
+    
+    .cuerpo2H .trabajos
+    {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: auto;
+        width: 100%;
+    }
 
     .cuerpo3v
     {
@@ -576,12 +584,6 @@ select
     {
         margin-bottom: 15px;
         width: 85%;
-    }
-    
-    .trabajos
-    {
-        grid-template-columns: 1fr;
-        width: 96%;
     }
 }
 /* Animaciones */
