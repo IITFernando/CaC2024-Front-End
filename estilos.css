@@ -566,9 +566,13 @@ select
         width: 90%;
     }
 
-    .index p
+    .index
     {
         height:fit-content;
+}
+
+    .index p
+    {
         width: 92%;
     }
 
